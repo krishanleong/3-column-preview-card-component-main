@@ -1,0 +1,80 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) 
+font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: (0, 0%, 95%);
+}
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  color: white;
+  width: 270px;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  font-family: "Big Shoulders Display", arial, serif;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.card p {
+  font-family: "Lexend Deca", arial, serif;
+  padding: 1rem 0rem 3rem 0rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card button {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sedan {
+  padding: 2rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.SUVs {
+  padding: 2rem;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.SUVs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury {
+  padding: 2rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+}
